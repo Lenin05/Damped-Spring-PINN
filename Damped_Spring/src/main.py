@@ -1,8 +1,8 @@
-from pinn import create_data, test_model, train_model
+from pinn import create_data, test_model, train_ia_model
 
 PROJECTS = {
     "Create_Data": create_data.run,
-    "Train_Model": train_model.run,
+    "Train_Model_IA": train_ia_model.run,
     "Test_Model": test_model.run,
 }
 
