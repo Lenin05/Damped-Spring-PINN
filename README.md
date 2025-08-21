@@ -1,2 +1,2 @@
 # Damped-Spring-PINN
-This project demonstrates a Physics-Informed Neural Network (PINN) applied to the underdamped harmonic oscillator equation.
+This project demonstrates a Physics-Informed Neural Network (PINN) applied to the underdamped harmonic oscillator equation. By integrating the laws of physics into the training process, the model learns to approximate the spring’s oscillatory motion with high accuracy. The app allows users to visualize the predicted dynamics compared to the analytical solution, showcasing how machine learning can solve differential equations in physics and engineering.
