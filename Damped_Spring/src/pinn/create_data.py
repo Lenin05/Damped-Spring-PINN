@@ -59,7 +59,7 @@ def run():
 
     plt.title("Oscilaciones Subamortiguadas con Ruido - Experimentos con variabilidad")
     plt.xlabel("Tiempo [s]")
-    plt.ylabel("Oscilación")
+    plt.ylabel("Amplitud")
     plt.grid(True)
     plt.legend(ncol=3, fontsize=8)
     plt.show()
