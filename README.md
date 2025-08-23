@@ -3,7 +3,7 @@
 Hola 👋, gracias por visitar este proyecto.  
 Aquí encontrarás el desarrollo de una **Red Neuronal Informada por Física (PINN)** aplicada al modelo de un **resorte amortiguado**.  
 El objetivo es mostrar cómo integrar ecuaciones diferenciales y deep learning para obtener predicciones más precisas y físicamente consistentes.
-
+Observa el funcionamiento aquí: https://damped-spring-pinn.streamlit.app/
 ---
 
 ## 🔗 Conecta conmigo  
