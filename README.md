@@ -1,3 +1,18 @@
+# Bienvenido al repositorio de Damped-Spring-PINN ⚙️
+
+Hola 👋, gracias por visitar este proyecto.  
+Aquí encontrarás el desarrollo de una **Red Neuronal Informada por Física (PINN)** aplicada al modelo de un **resorte amortiguado**.  
+El objetivo es mostrar cómo integrar ecuaciones diferenciales y deep learning para obtener predicciones más precisas y físicamente consistentes.
+
+---
+
+## 🔗 Conecta conmigo  
+
+[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lenin05) 
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0e76a8?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lenin-brandon-quezada-ju%C3%A1rez-a464b3257/)  
+
+
 # Introducción
 
 Podemos resolver el sistema fácilmente usando la ecuación que lo gobierna, aplicando las condiciones iniciales y prediciendo su comportamiento. Todo funciona bien hasta que nos enfrentamos a una realidad: en el mundo real, y especialmente en procesos industriales, los experimentos rara vez se dan en condiciones ideales. En esos casos, encontrar una fórmula que describa el sistema al 100% resulta casi imposible.
@@ -39,34 +54,30 @@ La ecuación diferencial que gobierna el sistema es:
 
 Para el caso subamortiguado, el discriminante es:
 
-$ \Delta = c^2 - 4km < 0 $
+![equation2](Damped_Spring/artifacts/eq2_discriminante.PNG)
 
 La solución analítica del sistema es:
 
-$ x(t) = e^{-\zeta \omega_n t} \left( A \cos(\omega_d t) + B \sin(\omega_d t) \right) $
+![equation3](Damped_Spring/artifacts/eq3_solucion_general.PNG)
 
 Donde:
 - Frecuencia natural: 
 
-  $ \omega_n = \sqrt{\tfrac{k}{m}} $  
+  ![variable1](Damped_Spring/artifacts/frecuencia_natural.PNG)
 
 - Razón de amortiguamiento:
 
-  $ \zeta = \tfrac{c}{2m\omega_n} = \tfrac{c}{2\sqrt{km}} $  
+  ![variable2](Damped_Spring/artifacts/frecuencia_amortiguada.PNG)
 
 - Frecuencia amortiguada:  
 
-  $ \omega_d = \omega_n \sqrt{1 - \zeta^2} $
+  ![variable3](Damped_Spring/artifacts/razon_de_amortiguamiento.PNG)
 
 Además, usando las condiciones iniciales:  $x(0)$, $v(0)$
 
-$
-x(0) = A \quad \Rightarrow \quad A = x(0)
-$
+![equation4](Damped_Spring/artifacts/calculo_A.PNG)
 
-$
-\dot{x}(0) = -\zeta \omega_n A + \omega_d B \quad \Rightarrow \quad B = \frac{v(0) + \zeta \omega_n x(0)}{\omega_d}
-$
+![equation5](Damped_Spring/artifacts/calculo_B.PNG)
 
 
 Con este fundamento matemático podemos continuar leyendo parte por parte cada linea de código:
