@@ -31,7 +31,7 @@ Where:
 
 La ecuación diferencial que gobierna el sistema es:
 
-![equation](https://latex.codecogs.com/svg.latex?\color{Golden} m\ddot{x}+c\dot{x}+kx=0)
+![equation1](Damped_Spring\artifacts\ec1_Resorte_Amortiguado.PNG)
 
 ---
 
