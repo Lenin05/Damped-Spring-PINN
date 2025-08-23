@@ -31,7 +31,7 @@ Where:
 
 La ecuación diferencial que gobierna el sistema es:
 
-![equation1](Damped_Spring/artifacts/eq1_expresion_general.png)
+![equation1](Damped_Spring/artifacts/eq1_expresion_general.PNG)
 
 ---
 
